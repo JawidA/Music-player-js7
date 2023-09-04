@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="player-contaner">
+        <div class="player-card">
+            <div class="image-contaner">
+                <img src="covers/mu-1.jpg" alt="Cover of the song">
+            </div>
+            
+            <h2 class="singer">Jeremy Zucker</h2>
+            <h3 class="song-name">Comethru</h3>
+            <audio src="music/mu-1.mp3" id="audio"></audio>
+            
+            <div class="progress-contaner">
+                <div class="durations">
+                    <span class="current-time">0:00</span>
+                    <span class="duration">3:02</span>
+                </div>
+
+                <div class="progress-bar">
+                    <div class="bar"></div>
+                </div>
+            </div>
+
+            <div class="controls">
+                <i class="fa-solid fa-backward previous" title="Previous"></i>
+                <i class="fa-solid fa-play stop" title="Stop"></i>
+                <i class="fa-solid fa-forward next" title="Next"></i>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
